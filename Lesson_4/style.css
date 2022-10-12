@@ -1,0 +1,157 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+    font-family: Arial;   
+}
+
+header {
+    display: flex;
+    height: 66px;
+    width: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header_wraper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 682px;
+}
+
+.logo_sml {
+    text-decoration: none;
+}
+
+.nav {
+    height: 29;
+}
+
+.nav_links {
+    display: flex;
+    gap: 30px;
+}
+.nav_links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.nav_links li {
+    list-style: none;
+} 
+
+.banner {
+    background: url(/Dawnload/bg_img_1.jpg) top center no-repeat;
+    background-size: cover;
+}
+
+.banner_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 834px;
+    flex-direction: column;
+}
+
+.banner_img {
+    justify-content: center;
+    margin-bottom: 12.71px;
+    margin-top: 180px;
+}
+
+.arrow {
+    margin-top: 171px;
+}
+
+
+.h1_title {
+    height: 88px;
+    width: 420px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    color: #45525B;
+    margin-top: 20px;
+}
+
+.bannet_subtitle_left {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: #45525B;
+    height: 175px;
+    width: 576px;
+    padding-right: 130px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.bannet_subtitle_right {
+    width: 576px;
+    height: 286px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+}
+
+.banner_sabtitle_lable {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;    
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FF8A63;
+}
+
+.sec_1 {
+    display: flex;
+    justify-content: center;
+}
+.paragraph_1 {
+    margin-top: 95px;
+    margin-bottom: 100px;
+    height: 286px;
+    width: 1168px;
+    display: flex;
+}
+
+.banner_footer {
+    display: flex;
+    height: 80px;
+    width: 576px;
+    margin-top: 19px;
+}
+
+.banner_footer_wrapper {
+    margin-top: 21px;
+    margin-left: 10px;
+}
+
+.banner_footer_name {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #45525B;
+}
+
+.banner_footer_pos {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #6F7278;
+}
