@@ -168,6 +168,13 @@ header {
     margin-bottom: 50px;
 }
 
+.sectiom_1_card:hover,
+.sectiom_2_card:hover,
+.sectiom_3_card:hover {
+    opacity: 80%;
+    background-color: #f1f1f1;
+}
+
 .section_content {
     max-width: 1220px;
     padding: 25px 0 0 0;
@@ -212,6 +219,11 @@ header {
     color: #000000;
     text-decoration: none;
     text-align: center;
+}
+
+.button:hover {
+    background-color: #f1f1f1;
+    color: #000;
 }
 
 .sectiom_3_card {
@@ -325,6 +337,12 @@ header {
     color: #FFFFFF;
     background-color: #000;
 }
+
+.sub_input:hover button {
+    color: #FFFFFF;
+    background-color: #373737;
+}
+
 
 .sub_input input{
     font-family: 'Libre Franklin';
