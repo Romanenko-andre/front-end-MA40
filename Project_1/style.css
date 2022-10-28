@@ -34,11 +34,14 @@ header {
 
 .nav {
     height: 29;
+    background-origin:
 }
+
 
 .nav_links {
     display: flex;
     gap: 30px;
+    text-overflow:;
 }
 
 .nav_links li a {
@@ -52,7 +55,7 @@ header {
 } 
 
 .banner {
-    background: url(/Download/bg_img_1.jpg) top center no-repeat;
+    background: url(/Project_1/Download/bg_img_1.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -274,7 +277,7 @@ header {
 
 .banner_photo_2 {
     height: 674px;
-    background: url(/Download/banner_photo_2.jpg) top center no-repeat;
+    background: url(/Project_1/Download/banner_photo_2.jpg) top center no-repeat;
     background-size: cover;
 }
 
@@ -594,10 +597,10 @@ header {
     height: 60px;
 }
 .owl-carousel .owl-nav .owl-prev{
-    background: url('/Download/arrow_left.png') no-repeat;
+    background: url(/Project_1/Download/arrow_left.png) no-repeat;
 }
 .owl-carousel .owl-nav .owl-next{
-    background: url('/Download/arrow_right.png') no-repeat;
+    background: url(/Project_1/Download/arrow_right.png) no-repeat;
 }
 
 .owl-carousel .owl-nav .owl-prev,
@@ -607,12 +610,12 @@ header {
 }
 
 .owl-carousel .owl-nav .owl-prev:before{
-    content:url(/Download/arrow_left.png);
+    content:url(/Project_1/Download/arrow_left.png);
     margin-right:10px;
 }
 
 .owl-carousel .owl-nav .owl-next:after{
-    content:url(/Download/arrow_right.png);
+    content:url(/Project_1/Download/arrow_right.png');
     margin-right:10px;
 }
 

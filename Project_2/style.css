@@ -15,8 +15,7 @@ header {
 }
 
 .banner {
-    background: url(/images/background_1.jpg) top center no-repeat;
-    background-size: cover;
+    background: url(/Project_2/images/background_1.jpg) top center no-repeat;
 }
 
 .header_banner {
@@ -45,12 +44,12 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
     margin-right: 40px;
 }
 
-.h_menu li a {
+.h_menu li a{
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .blue_button a{

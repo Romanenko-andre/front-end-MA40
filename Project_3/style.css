@@ -12,7 +12,7 @@ header {
     border-bottom: solid 1px #E6E6E6;
 }
 
-.nav_menu a {
+.nav_menu li a{
     font-family: 'Libre Franklin';
     font-weight: 400;
     font-size: 14px;
@@ -256,7 +256,7 @@ header {
 
 }
 
-.footer_logo p{
+.footer_logo h3{
     font-family: 'Libre Franklin';
     font-style: normal;
     font-weight: 400;
