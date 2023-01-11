@@ -11,9 +11,10 @@ body {
 }
 
 header {
+    padding: 12px;
+    /*
     display: flex;
-    height: 66px;
-    justify-content: space-between;
+    justify-content: space-between;*/
 }
 
 .container {
@@ -25,7 +26,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 682px;
 }
 
 .logo_sml {
@@ -450,6 +450,7 @@ header {
 .s4_team_photo_disp {
     display: flex;
     margin-bottom: 16px;
+    gap: 10px;
 }
 
 /* ----- section 5 ----- */

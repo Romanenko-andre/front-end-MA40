@@ -23,23 +23,23 @@ header {
     border-bottom: solid #fff 2px;
 }
 
-.nav_menu {
+.header_menu {
     display: flex;
     margin-left: auto;
     width: 50%;
     padding: 40px 0px;
 }
 
-.h_menu {
+.nav_menu {
     list-style: none;
 }
 
-.nav_menu a:hover {
+.header_menu a:hover {
     border-bottom: solid #fff 4px;
     padding-bottom: 40px;
 }
 
-.h_menu li {
+.nav_menu li {
     display: inline-block;
     font-weight: 500;
     font-size: 16px;
@@ -47,7 +47,7 @@ header {
     margin-right: 40px;
 }
 
-.h_menu li a{
+.nav_menu li a{
     text-decoration: none;
     color: #FFFFFF;
 }
@@ -158,7 +158,7 @@ header {
 .sec_1_description {
     display: flex;
     justify-content: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1110px;
     flex-wrap: wrap;
     
@@ -207,8 +207,9 @@ header {
     padding: 70px 0;
 }
 
-.sec2_img {
-    padding-left: 120px;
+.sec2_img img{
+    mix-blend-mode:darken ;/*
+    padding-left: 120px;*/
 }
 
 .sec2_img img {
@@ -225,6 +226,8 @@ header {
     max-width: 1110px;
     border-bottom: 1px solid #E0E0E0;
     padding-bottom: 90px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .prog_h {
@@ -330,4 +333,61 @@ margin-top: 30px;
     flex-wrap: wrap;
     padding-bottom: 85px;
     border-bottom: 1px solid #E0E0E0;
+}
+
+/* burger menu */
+
+@media screen and (width <= 1240px) {
+    .nav_menu li {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (width >= 1036px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and (width <= 1036px) {
+    .header_menu {
+        width: 100%;
+    }
+    .nav_menu {
+        display: none;
+    }
+    .nav_menu.open_menu {
+        display: block;
+        list-style: none;
+        align-self: center;
+    }
+    .nav_menu li {
+        display: block;
+        margin: 0px 30px 10px 0px;
+    }
+
+    .burger {
+        display: block;
+    }
+    .header_menu {
+        justify-content: flex-end;
+        padding: 5px 0px;
+    }
+    .header_menu a:hover {
+        border-bottom: solid #fff 4px;
+        padding-bottom: 0px;
+    }
+
+}
+
+.burger {
+    cursor: pointer;
+
+}
+
+.burger_line {
+    height: 3px;
+    background-color: white;
+    margin: 5px 10px 5px 10px;
+    width: 25px;
 }

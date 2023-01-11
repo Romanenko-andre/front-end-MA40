@@ -1,0 +1,1104 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Roboto';
+}
+
+body {
+    background-color: #F5F8F9;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+
+/* fonts
+
+font-family: 'Concert One', cursive;
+font-family: 'Marvel', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+
+.header_menu {
+    margin: 30px 0 5px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 5px 0 5px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1220px;
+    padding: 10px;
+}
+
+.button {
+    width: 247px;
+    height: 43px;
+    background: linear-gradient(#F9F0C3, #EFBB03);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #31456A;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: .3s ease;
+}
+
+.on_mobile,
+.Mask_Group_photo_on,
+.offer_mobile {
+    display: none;
+}
+
+.offer_mobile {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #9FCBF1;
+}
+
+.nav_menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header_logo { 
+    margin-right: 10px;
+}
+
+.nav_menu li { 
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.nav_menu li a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    color: #31456A;
+    text-decoration: none;
+    border: solid 2px transparent;
+}
+
+.nav_menu li a,
+.spec_menu_nav li a {
+    transition: 0.5s;
+}
+
+.nav_menu li a:hover,
+.spec_menu_nav li a:hover {
+    border-bottom: solid 2px;
+    transition: .3s ease;
+}
+
+.button:hover {
+    transition: 0.3s ease;
+    background: linear-gradient(#EFBB03, #F9F0C3); 
+}
+
+.left_top_ball {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.right_top_ball {
+    width: calc(100% - w);
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -1;
+}
+
+.main_banner {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 60px;
+    margin-top: 65px;
+    background: 40% 0% no-repeat url(/Project_6/img/Easyfest_banner.png);
+}
+
+h1, .news_card_text h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #31456A;
+    margin-bottom: 20px;
+}
+
+.main_banner p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #31456A;
+}
+
+.banner_h {
+    display: flex;
+    margin-top: -120px;
+    margin-left: 150px;
+    flex-direction: column;
+}
+
+.banner_dog_img {
+    position: relative;
+    z-index: 1;
+    height: 400px;
+    width: 320px;
+    right: -20rem;
+    top: 2rem;
+}
+
+.dog_img {
+    background-image: url(/Project_6/img/dog_skater.png);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.banner_2_img {
+    display: flex;
+    align-items: flex-end;
+}
+
+.banner_2_descriprion {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+}
+
+.banner_2_text {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.banner_2_text h2{
+    max-width: 457px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    align-items: center;
+    color: #31456A;
+}
+
+.banner_2_text p,
+.executor_text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #31456A;
+}
+.banner_2_text span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    color: #31456A;
+}
+
+.present_box {
+    position: relative;
+    animation-name: present;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse ;
+    z-index: -2;
+}
+
+.specialisacion {
+    display: flex;
+    flex-direction: column;
+}
+
+.specialisacion h2,
+.review_top h2,
+.news h2 {
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #31456A;
+}
+
+.spec_menu_nav {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1.5rem;
+}
+
+.spec_menu_nav li {
+    margin-bottom: 15px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+    color: #31456A;
+}
+.spec_menu_nav li:first-child {
+    margin-bottom: 20px;
+}
+
+.spec_menu_nav li a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8CA2B7;
+    border: solid 2px transparent;
+
+}
+
+.executor {
+    background: url(/Project_6/img/Easyfest_backgound_transparant.png) no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-around;
+    padding-bottom: 80px;
+}
+
+.executor_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.executor_text p {
+    margin-bottom: 30px;
+}
+
+.executor_text h2,
+.how_it_works_text h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    color: #31456A;
+    margin-bottom: 14px;
+}
+
+.how_it_works_img {
+    margin-top: -100px;
+}
+
+.how_it_works_text_1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.how_it_works_text_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.how_it_works_text_1 p,
+.how_it_works_text_2 p,
+.review_text p,
+.news_card_text p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    color: #31456A;
+}
+
+.how_it_works_text {
+    padding: 20px;
+    margin: 100px 0;
+}
+
+.how_it_works_text a {
+    margin-top: 58px;
+}
+
+.how_it_works_text h2 {
+    margin-bottom: 39px;
+}
+
+.how_it_works {
+    background-image: url(/Project_6/img/Rapper.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 70%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: 10% 20% 20% 20% 10%;
+    gap: 40px;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.advantages h2 {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 41px;
+    grid-column: span 5;
+    color: #31456A;
+    text-align: center;
+}
+
+.adv_desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 190px;
+}
+
+.adv_desc p{
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #31456A;
+}
+.banner_yellow_wind {
+    width: 115px;
+    rotate: 180deg;
+    position: relative;
+    top: -5rem;
+    right: 20rem;
+}
+
+.yellow_wind {
+    width: 105px;
+    rotate: 270deg;
+    position: relative;
+    top: 45px;
+}
+
+.blue_wind {
+    width: 77px;
+    rotate: 170deg;
+}
+
+.review {
+    display: flex;
+    gap: 90px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.review_right {
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.review_center {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.review_name_txt {
+    margin-bottom: -15px;
+}
+
+.review_name_txt_count {
+    display: flex;
+    flex-direction: column;
+}
+
+.review_name { /*
+    display: grid;
+    grid-template-columns:
+    80px 70px 20px 20px 20px 20px 20px 20px 140px 20px;
+    grid-template-rows: 1fr 1fr;*/
+    display: flex;
+    border-bottom: 1px solid #D6E4F0;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.avatar {
+    grid-row: span 2;
+}
+
+.review_name span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #8CA2B7;
+}
+
+.review_count {
+    height: 40px;
+}
+
+.like_count,
+.dislike_count,
+.star_reting,
+.task_count {
+    color: #31456A;
+}
+
+.review_name h6 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    align-items: center;
+    color: #31456A;
+    grid-column: span 9;
+}
+
+.star_rating {
+    position: relative;
+    bottom: -10px;
+}
+
+.review_yellow_wind {
+    position: relative;
+    rotate: 45deg;
+}
+
+.review_ava {
+    margin-right: 20px;
+}
+
+.news_cards {
+    display: grid;
+    grid-template-columns: 400px 86px 402px;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.news_cars_img_blur {
+    grid-column: span 2;
+    padding: 58px 38px 57px 53px;
+    gap: 20px;
+    background-color: #FFD93B;
+    max-height: 325px;
+}
+
+.news_card_image img {
+    width: 100%;
+}
+
+.news_card_image:nth-child(4){
+    grid-column: span 2;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0 100px 0;
+}
+
+footer {
+    background-color: #4097E3;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9px;
+    color: #FFFFFF;
+}
+
+footer p u a {
+    color: #FFFFFF;
+}
+
+
+.footer_nav {
+    max-width: 1094px;
+    margin: 0 auto;
+}
+
+.footer_nav_menu {
+    display: flex;
+    padding: 22px 0 22px 0;
+    justify-content: space-between;
+}
+
+.footer_nav_menu li a {
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer_nav_menu li {
+    font-size: 12px;
+    line-height: 22px;
+    color: #9ECDF6;
+    margin-top: 10px;
+    list-style: none;
+    padding: 5px;
+}
+
+.footer_social_links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.a_hover, .footer_nav_menu li a{
+    transition: .3s ease;
+    opacity: 50%;
+}
+
+.a_hover:hover, .footer_nav_menu li a:hover {
+    opacity: 100%;
+    transition: .3s ease;
+}
+
+
+.rro {
+    font-size: 8px;
+    color: #9ECDF6;
+}
+
+/*-------------B-U-R-G-E-R-----S-T-A-R-T----------*/
+
+.burger {
+    fill:#fff;
+    width: 30px;
+    height: 25px;
+}
+
+button {
+    background: transparent;
+    border: transparent;
+    border-radius: 3px;
+}
+.burger_btn {
+    display: none;
+}
+.burger_btn .burger .line {
+    transition: 
+    y 100ms ease-in 100ms,
+    rotate 100ms ease-in,
+    opacity 0ms 100ms;
+    transform-origin: center;
+}
+
+.burger_btn .burger {
+    transition: rotate 500ms ease-in 300ms;
+}
+
+.burger_btn[data-state="opened"] .burger {
+    rotate: 0.25turn;
+}
+
+.burger_btn[data-state="opened"] .burger .line {
+    transition: 
+    y 100ms ease-in,
+    rotate 100ms ease-in 100ms,
+    opacity 0ms 100ms;
+}
+
+.burger_btn[data-state="opened"] .burger :is(.top, .bottomn) {
+    y: 12;
+}
+
+.burger_btn[data-state="opened"] .burger .top {
+    rotate: 45deg;
+}
+.burger_btn[data-state="opened"] .burger .bottomn {
+    rotate: -45deg;
+}
+
+.burger_btn[data-state="opened"] .burger .middle {
+    opacity: 0;
+}
+
+
+/*----------------B-U-R-G-E-R---E-N-D--------------*/
+
+/* -----K-E-Y-F-R-A-M-E----- */
+
+
+.falling_candy1 {
+    margin-top: -30px;
+    left: 0%;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy1;
+}
+
+.falling_candy2 {
+    margin-top: -30px;
+    left: 5%;
+    position: relative;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy2;
+}
+
+.falling_candy3 {
+    margin-top: -30px;
+    left: 10%;
+    position: relative;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy3;
+}
+
+.falling_candy4 {
+    margin-top: -30px;
+    left: 20%;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy1;
+}
+
+.falling_candy5 {
+    margin-top: -30px;
+    left: 30%;
+    position: relative;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy2;
+}
+
+.falling_candy6 {
+    margin-top: -30px;
+    left: 40%;
+    position: relative;
+    animation-duration: 6s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy3;
+}
+
+.falling_candy7 {
+    margin-top: -30px;
+    left: 50%;
+    position: relative;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy1;
+}
+
+.falling_candy8 {
+    margin-top: -30px;
+    left: 60%;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy2;
+}
+
+.falling_candy9 {
+    margin-top: -30px;
+    left: 70%;
+    position: relative;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: normal ;
+    z-index: -2;
+    animation-name: candy3;
+}
+
+.falling_candy1,
+.falling_candy2,
+.falling_candy3,
+.falling_candy4,
+.falling_candy5,
+.falling_candy6,
+.falling_candy7,
+.falling_candy8,
+.falling_candy9 {
+    transform-origin: center;
+}
+
+.phone_rotate_vertical {
+    animation-duration: 2s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse ;
+    animation-name: rotate_vertical;
+    top: 90px;
+}
+
+.easyfest_love {
+    animation-duration: 2s;
+    position: relative;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse ;
+    animation-name: easyfest_love;
+}
+
+
+@keyframes candy1 {
+    from {
+        transform: translateY(0vh);
+        rotate: 1 -1 0 5deg;
+        opacity: 100%;
+    }
+    to {
+        transform: translateY(80vh);
+        rotate: 0 0 -1 10deg;
+        opacity: 0%;
+    }
+}
+
+@keyframes candy2 {
+    from {
+        transform: translateY(0vh);
+        rotate: -1 0 -1 0deg;
+        opacity: 100%;
+    }
+    to {
+        transform: translateY(80vh);
+        rotate: 0 1 0 10deg;
+        opacity: 0%;
+    }
+}
+
+@keyframes candy3 {
+    from {
+        transform: translateY(0vh);
+        rotate: 0 0 1 10deg;
+        opacity: 90%;
+    }
+    to {
+        transform: translateY(80vh);
+        rotate: 1 -1 -1 15deg;
+        opacity: 0%;
+    }
+}
+
+@keyframes present {
+    0% {
+        scale: 100%;
+        rotate: 5deg;
+    }
+    20% {
+        scale: 105%;
+        rotate: -5deg;
+    }
+    40% {
+        scale: 100%;
+        rotate: 5deg;
+    }
+    60% {
+        scale: 105%;
+        rotate: -5deg;
+    }
+    80% {
+        scale: 100%;
+        rotate: 5deg;
+    }
+}
+
+@keyframes rotate_vertical
+{
+    from {
+        rotate: 0 0 0 0deg;
+    }
+    to {
+        rotate: 1 0 0 20deg;
+    }
+}
+
+@keyframes easyfest_love
+{
+    from {
+        scale: 100%;
+    }
+    to {
+        scale: 120%;
+    }
+}
+
+/* - - - - M-E-D-I-A - - - - */
+
+@media (width < 1024px) {
+    .banner_2_img {
+        display: none;
+    }
+
+    .main_banner {
+        padding-left: 0;
+    }
+
+    .main_banner_img {
+        width: 100%;
+    }
+}
+
+@media (width < 940px) {
+    .news_card_image img {
+        border-radius: 6px;
+    }
+    .banner_dog_img {
+        right: -13rem;
+        top: 2rem;
+    }
+    .banner_yellow_wind {
+        right: 12rem;
+    }
+    .banner_h {
+        padding-left: 20px;
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+    .nav_menu li {
+        display: inline-block;
+        margin-left: 5px;
+    }
+    .news_cards {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .advantages {
+        gap: 0px;
+        justify-content: space-between;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .news_cars_img_blur {
+        background-image: url(../Project_6/img/Mask_Group_photo_399_325.png);
+        background-size: cover;
+        padding: 0;
+    }
+    .news_card_text {
+        padding: 29px 57px 27px 34px;
+        gap: 20px;
+        background-color: rgba(255, 224, 128, 0.8);
+        flex: 1;
+        backdrop-filter: blur(5px);
+    }
+    .Mask_Group_photo_on {
+        display: block;
+    }
+    .Mask_Group_photo {
+        display: none;
+    }
+}
+
+@media (width < 768px) {
+    .offer_mobile {
+        margin-top: 20px;
+        display: block;
+    }
+    .banner_yellow_wind {
+        width: 60px;
+        left: 6rem;
+        top: 3rem;
+        rotate: 180deg;
+    }
+    .main_banner {
+        margin-top: 0px;
+        background: 40% 0% / 100% no-repeat url(/Project_6/img/Easyfest_banner.png);
+    }
+    .banner_dog_img {
+        width: 200px;
+        top: 3rem;
+    }
+    .executor_text h2 {
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        color: #31456A;
+    }
+    .dog_img {
+        width: 200px;
+        background-image: url(/Project_6/img/dog_skater_16deg.png);
+    }
+    .banner_h {
+        padding-left: 20px;
+        margin-top: -230px;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banner_h h1,
+    .banner_2_text h2{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .phone_rotate_vertical {
+            width: 100%;
+    }
+    .banner_2_text {
+        gap: 20px;
+    }
+    .main_banner {
+        align-items: flex-start;
+    }
+    .banner_2_text span {
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .main_banner p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .specialisacion h2 {
+        font-size: 18px;
+    }
+    .spec_menu_nav li {
+        font-size: 14px;
+    }
+    .banner_2_text p,
+    .executor_text p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    .executor_text {
+        background: #FFFFFF ;
+        top: -10rem;
+    }
+    .executor_text p {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        color: #31456A;
+    }
+    .executor {
+        flex-wrap: wrap-reverse;
+        animation-name: none;
+    }
+    .nav_ul {visibility: hidden;}
+    .burger_btn {display: block;}
+    .advantages {
+        display: flex;
+        gap: 39px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how_it_works {
+        background-size: 100%;
+        background-position: -160px 175px;
+    }
+    .how_it_works_text_img {
+        height: 70px;
+    }
+    .falling_candy1, .falling_candy2, .falling_candy3,
+    .falling_candy4, .falling_candy5, .falling_candy6,
+    .falling_candy7, .falling_candy8, .falling_candy9,
+    .review_left, footer,
+    .no_mobile, .review_yellow_wind, .yellow_wind {
+        display: none;
+    }
+    .Yellow_suit {
+        width: 144px;
+    }
+    .on_mobile {
+        display: flex;
+        width: 196px;
+    }
+    .news_cars_img_blur {
+        background-image: url(../Project_6/img/Mask_Group_photo_399_325.png);
+        background-size: cover;
+    }
+    .news_card_text {
+        padding: 29px 57px 27px 34px;
+        gap: 20px;
+        background-color: rgba(255, 224, 128, 0.8);
+        flex: 1;
+        backdrop-filter: blur(5px);
+    }
+    
+    .spec_menu_nav {
+        display: flex;   
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    .how_it_works {
+        grid-template-columns: 40% 60%;
+    }
+    .left_top_ball {
+        top: -110px;
+        left: -110px;
+    }
+
+}

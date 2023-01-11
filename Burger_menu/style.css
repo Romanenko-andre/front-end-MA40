@@ -1,0 +1,90 @@
+/* burger menu
+
+<button title="menu"
+        button-type='button'
+        type='button'
+        class="burger_btn"
+        aria-controls="primary_nav"
+        data-state="false">
+            <svg class="burger" view-box="0 0 30 30">
+                <rect class="line top" width="30" height="2" y="4" rx="1"></rect>
+                <rect class="line middle" width="30" height="2" y="12" rx="1"></rect>
+                <rect class="line bottomn" width="30" height="2" y="20" rx="1"></rect>
+            </svg>
+</button>
+
+*/
+
+
+/*-------------B-U-R-G-E-R-----S-T-A-R-T----------*/
+
+.burger {
+    fill:#fff;
+    width: 30px;
+    height: 25px;
+}
+
+button {
+    background: transparent;
+    border: transparent;
+    border-radius: 3px;
+}
+
+.burger_btn .burger .line {
+    transition: 
+    y 100ms ease-in 100ms,
+    rotate 100ms ease-in,
+    opacity 0ms 100ms;
+    transform-origin: center;
+}
+
+.burger_btn .burger {
+    transition: rotate 500ms ease-in 300ms;
+}
+
+.burger_btn[data-state="opened"] .burger {
+    rotate: 0.25turn;
+}
+
+.burger_btn[data-state="opened"] .burger .line {
+    transition: 
+    y 100ms ease-in,
+    rotate 100ms ease-in 100ms,
+    opacity 0ms 100ms;
+}
+
+.burger_btn[data-state="opened"] .burger :is(.top, .bottomn) {
+    y: 12;
+}
+
+.burger_btn[data-state="opened"] .burger .top {
+    rotate: 45deg;
+}
+.burger_btn[data-state="opened"] .burger .bottomn {
+    rotate: -45deg;
+}
+
+.burger_btn[data-state="opened"] .burger .middle {
+    opacity: 0;
+}
+
+/*----------------B-U-R-G-E-R---E-N-D--------------*/
+
+@media screen and (width >= 1020px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media screen and (width <= 1020px) {
+    .nav_menu {
+        display: none;
+    }
+    .nav_menu.open_menu {
+        display: block;
+        align-self: center;
+    }
+    .burger {
+        display: block;
+    }
+}
